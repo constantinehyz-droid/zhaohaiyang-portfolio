@@ -342,18 +342,17 @@
             padding: 8px 4px;
             scrollbar-width: none;
             -ms-overflow-style: none;
-            animation: autoScroll 156s linear infinite;
+            cursor: grab;
+            user-select: none;
+            -webkit-user-select: none;
             width: max-content;
+            will-change: transform;
         }
-        .film-gallery:hover {
-            animation-play-state: paused;
+        .film-gallery:active {
+            cursor: grabbing;
         }
         .film-gallery::-webkit-scrollbar {
             display: none;
-        }
-        @keyframes autoScroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
         }
         .film-gallery-item {
             flex: 0 0 auto;
@@ -390,7 +389,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: top center;
+            object-position: center;
             display: block;
             position: absolute;
             top: 0;
@@ -615,7 +614,7 @@
         </div>
         <h1 class="hero-title">用光影<br>讲述<span>故事</span></h1>
         <p class="hero-description">
-            从视效合成到引擎灯光，从 3A 游戏到好莱坞电影。专注于视觉叙事的技术与艺术的交汇点，在虚拟与真实之间寻找最美的那一束光。
+            从视效合成到引擎灯光，从好莱坞电影到 3A 游戏。专注于视觉叙事的技术与艺术的交汇点，在虚拟与真实之间寻找最美的那一束光。
         </p>
         <div class="hero-stats">
             <div class="hero-stat">
@@ -863,7 +862,26 @@
         <div class="project-category" style="margin-bottom: 48px;">
             <h3 class="section-label" style="text-align: left; margin-bottom: 24px;">🎮 引擎灯光 / 游戏PV</h3>
             <div class="projects-grid" id="gameProjects">
-                <a href="https://www.bilibili.com/video/BV1dCV66GEgM" target="_blank" class="project-card" data-delay="0">
+                <a href="https://www.bilibili.com/video/BV1tDjo6pEQp?p=3" target="_blank" class="project-card" data-delay="0">
+                    <div class="project-card-image">
+                        <img src="endfield_kamio.jpg" alt="终末地 - 卡缪角色PV" loading="lazy">
+                        <div class="project-card-image-overlay">
+                            <span class="project-card-type">鹰角网络 · 角色PV</span>
+                        </div>
+                    </div>
+                    <div class="project-card-content">
+                        <div class="project-card-header">
+                            <span class="project-card-title">终末地-卡缪角色PV</span>
+                        </div>
+                        <p class="project-card-desc">《明日方舟：终末地》干员叙事角色PV「卡缪：猎血的看护人」。负责灯光合成与生产导演工作，把控角色视觉呈现与整体画面质量。</p>
+                        <div class="project-card-meta">
+                            <span>2026 · 灯光合成 / 生产导演</span>
+                            <span class="project-card-link">B站观看 →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.bilibili.com/video/BV1dCV66GEgM" target="_blank" class="project-card" data-delay="1">
                     <div class="project-card-image">
                         <img src="endfield_mifu_cover.jpg" alt="终末地 - 弥弗角色PV" loading="lazy">
                         <div class="project-card-image-overlay">
@@ -882,7 +900,7 @@
                     </div>
                 </a>
 
-                <a href="https://www.bilibili.com/video/BV157cQzdEXu" target="_blank" class="project-card" data-delay="1">
+                <a href="https://www.bilibili.com/video/BV157cQzdEXu" target="_blank" class="project-card" data-delay="2">
                     <div class="project-card-image">
                         <img src="endfield_tangtang.png" alt="终末地 - 汤汤角色PV" loading="lazy">
                         <div class="project-card-image-overlay">
@@ -901,7 +919,7 @@
                     </div>
                 </a>
 
-                <a href="https://www.bilibili.com/video/BV1UeX1B3EW1" target="_blank" class="project-card" data-delay="2">
+                <a href="https://www.bilibili.com/video/BV1UeX1B3EW1" target="_blank" class="project-card" data-delay="3">
                     <div class="project-card-image">
                         <img src="endfield_ep.png" alt="终末地 - EP系列" loading="lazy">
                         <div class="project-card-image-overlay">
@@ -920,7 +938,7 @@
                     </div>
                 </a>
 
-                <a href="https://www.bilibili.com/video/BV12skTBqEic/" target="_blank" class="project-card" data-delay="3">
+                <a href="https://www.bilibili.com/video/BV12skTBqEic/" target="_blank" class="project-card" data-delay="4">
                     <div class="project-card-image">
                         <img src="endfield_narrative.jpg" alt="角色PV：干员叙事" loading="lazy">
                         <div class="project-card-image-overlay">
@@ -939,7 +957,7 @@
                     </div>
                 </a>
 
-                <a href="https://www.bilibili.com/video/BV1E2LbzBE2N" target="_blank" class="project-card" data-delay="4">
+                <a href="https://www.bilibili.com/video/BV1E2LbzBE2N" target="_blank" class="project-card" data-delay="5">
                     <div class="project-card-image">
                         <img src="sevendays_mobile.jpg" alt="七日世界 - 移动公测PV" loading="lazy">
                         <div class="project-card-image-overlay">
@@ -958,7 +976,7 @@
                     </div>
                 </a>
 
-                <a href="https://www.bilibili.com/video/BV1YMoMYfEsF" target="_blank" class="project-card" data-delay="5">
+                <a href="https://www.bilibili.com/video/BV1YMoMYfEsF" target="_blank" class="project-card" data-delay="6">
                     <div class="project-card-image">
                         <img src="wanmin_longzhong.jpg" alt="万民长歌 - 隆中对PV" loading="lazy">
                         <div class="project-card-image-overlay">
@@ -977,7 +995,7 @@
                     </div>
                 </a>
 
-                <a href="https://www.bilibili.com/video/BV1efNJzGEo7" target="_blank" class="project-card" data-delay="6">
+                <a href="https://www.bilibili.com/video/BV1efNJzGEo7" target="_blank" class="project-card" data-delay="7">
                     <div class="project-card-image">
                         <img src="firefly_strike.png" alt="萤火突击 - 新版本PV" loading="lazy">
                         <div class="project-card-image-overlay">
@@ -1026,7 +1044,7 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-delay="1" onclick="openVideoModal('video_virtual.mov')" style="cursor:pointer;">
+                <div class="project-card" data-delay="1" onclick="openVideoModal('video_naruto.mov')" style="cursor:pointer;">
                     <div class="project-card-image">
                         <img src="naruto_reignite.png" alt="火影忍者重燃盛典" loading="lazy">
                         <div class="project-card-image-overlay">
@@ -1050,9 +1068,9 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-delay="2" onclick="openVideoModal('video_cf.mov')" style="cursor:pointer;">
-                    <div class="project-card-image" style="background: linear-gradient(135deg, #1a1a2e 0%, #2d1b69 100%);">
-                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 48px; z-index:5;">🎬</div>
+                <div class="project-card" data-delay="2" onclick="openVideoModal('video_virtual.mov')" style="cursor:pointer;">
+                    <div class="project-card-image">
+                        <img src="apocalypse_cover.png" alt="他和他世界末日" loading="lazy">
                         <div class="project-card-image-overlay">
                             <span class="project-card-type">虚拟拍摄</span>
                         </div>
@@ -1097,239 +1115,243 @@
                         <h4 class="film-gallery-title">🎬 影视作品</h4>
                     </div>
                     <div class="film-gallery" id="filmGallery">
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2021</span>
-                            <img src="poster_01.jpg" alt="长津湖" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">长津湖</span>
-                                <span class="film-gallery-role">The Battle at Lake Changjin</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2020</span>
-                            <img src="poster_02.jpg" alt="曼达洛人 2" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">曼达洛人 2</span>
-                                <span class="film-gallery-role">The Mandalorian S2</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2018</span>
-                            <img src="poster_03.jpg" alt="海王" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">海王</span>
-                                <span class="film-gallery-role">Aquaman</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2018</span>
-                            <img src="poster_04.jpg" alt="大黄蜂" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">大黄蜂</span>
-                                <span class="film-gallery-role">Bumblebee</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2018</span>
-                            <img src="poster_05.jpg" alt="邪不压正" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">邪不压正</span>
-                                <span class="film-gallery-role">Hidden Man</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2018</span>
-                            <img src="poster_06.jpg" alt="捉妖记2" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">捉妖记2</span>
-                                <span class="film-gallery-role">Monster Hunt 2</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2018</span>
-                            <img src="poster_07.jpg" alt="科洛弗悖论" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">科洛弗悖论</span>
-                                <span class="film-gallery-role">The Cloverfield Paradox</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2017</span>
-                            <img src="poster_08.jpg" alt="星球大战8" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">星球大战8</span>
-                                <span class="film-gallery-role">Star Wars: The Last Jedi</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2017</span>
-                            <img src="poster_09.jpg" alt="美国众神" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">美国众神</span>
-                                <span class="film-gallery-role">American Gods</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2016</span>
-                            <img src="poster_10.jpg" alt="长城" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">长城</span>
-                                <span class="film-gallery-role">The Great Wall</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2016</span>
-                            <img src="poster_11.jpg" alt="美国队长3" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">美国队长3</span>
-                                <span class="film-gallery-role">Captain America: Civil War</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2016</span>
-                            <img src="poster_12.jpg" alt="星际迷航3" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">星际迷航3</span>
-                                <span class="film-gallery-role">Star Trek Beyond</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2016</span>
-                            <img src="poster_13.jpg" alt="深海浩劫" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">深海浩劫</span>
-                                <span class="film-gallery-role">Deepwater Horizon</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2016</span>
-                            <img src="poster_14.jpg" alt="忍者神龟2" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">忍者神龟2</span>
-                                <span class="film-gallery-role">Teenage Mutant Ninja Turtles: Out of the Shadows</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2016</span>
-                            <img src="poster_15.jpg" alt="奇异博士" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">奇异博士</span>
-                                <span class="film-gallery-role">Doctor Strange</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2016</span>
-                            <img src="poster_16.jpg" alt="星际特工" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">星际特工</span>
-                                <span class="film-gallery-role">Valerian and the City of a Thousand Planets</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2015</span>
-                            <img src="poster_17.jpg" alt="特工卡特" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">特工卡特</span>
-                                <span class="film-gallery-role">Agent Carter</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2015</span>
-                            <img src="poster_18.jpg" alt="捉妖记" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">捉妖记</span>
-                                <span class="film-gallery-role">Monster Hunt</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2015</span>
-                            <img src="poster_19.jpg" alt="星球大战7" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">星球大战7</span>
-                                <span class="film-gallery-role">Star Wars: The Force Awakens</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2014</span>
-                            <img src="poster_20.jpg" alt="变形金刚4" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">变形金刚4</span>
-                                <span class="film-gallery-role">Transformers: Age of Extinction</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2014</span>
-                            <img src="poster_21.jpg" alt="黑帆2" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">黑帆2</span>
-                                <span class="film-gallery-role">Black Sails 2</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2014</span>
-                            <img src="poster_22.jpg" alt="狼图腾" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">狼图腾</span>
-                                <span class="film-gallery-role">Wolf Totem</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2014</span>
-                            <img src="poster_23.jpg" alt="明日世界" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">明日世界</span>
-                                <span class="film-gallery-role">Tomorrowland</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2014</span>
-                            <img src="poster_24.jpg" alt="魔法老师" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">魔法老师</span>
-                                <span class="film-gallery-role">Absolutely Anything</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2013</span>
-                            <img src="poster_25.jpg" alt="天注定" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">天注定</span>
-                                <span class="film-gallery-role">A Touch Of Sin</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2013</span>
-                            <img src="poster_26.jpg" alt="环太平洋" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">环太平洋</span>
-                                <span class="film-gallery-role">Pacific Rim</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2013</span>
-                            <img src="poster_27.jpg" alt="地球回音" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">地球回音</span>
-                                <span class="film-gallery-role">Earth to Echo</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2013</span>
-                            <img src="poster_28.jpg" alt="太极侠" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">太极侠</span>
-                                <span class="film-gallery-role">Man of Taichi</span>
-                            </div>
-                        </div>
-                        <div class="film-gallery-item">
-                            <span class="film-gallery-year">2013</span>
-                            <img src="poster_29.jpg" alt="黑帆" loading="lazy">
-                            <div class="film-gallery-caption">
-                                <span class="film-gallery-film">黑帆</span>
-                                <span class="film-gallery-role">Black Sails</span>
-                            </div>
-                        </div>
-                    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2021</span>
+        <img src="poster_01.jpg" alt="长津湖" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">长津湖</span>
+            <span class="film-gallery-role">The Battle at Lake Changjin</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2020</span>
+        <img src="poster_02.jpg" alt="曼达洛人 2" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% -1%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">曼达洛人 2</span>
+            <span class="film-gallery-role">The Mandalorian S2</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2018</span>
+        <img src="poster_03.jpg" alt="海王" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% -1%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">海王</span>
+            <span class="film-gallery-role">Aquaman</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2018</span>
+        <img src="poster_04.jpg" alt="大黄蜂" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">大黄蜂</span>
+            <span class="film-gallery-role">Bumblebee</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2018</span>
+        <img src="poster_05.jpg" alt="邪不压正" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% -1%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">邪不压正</span>
+            <span class="film-gallery-role">Hidden Man</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2018</span>
+        <img src="poster_06.jpg" alt="捉妖记2" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">捉妖记2</span>
+            <span class="film-gallery-role">Monster Hunt 2</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2018</span>
+        <img src="poster_07.jpg" alt="科洛弗悖论" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">科洛弗悖论</span>
+            <span class="film-gallery-role">The Cloverfield Paradox</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2017</span>
+        <img src="poster_08.jpg" alt="星球大战8" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">星球大战8</span>
+            <span class="film-gallery-role">Star Wars: The Last Jedi</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2017</span>
+        <img src="poster_09.jpg" alt="美国众神" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">美国众神</span>
+            <span class="film-gallery-role">American Gods</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2016</span>
+        <img src="poster_10.jpg" alt="长城" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">长城</span>
+            <span class="film-gallery-role">The Great Wall</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2016</span>
+        <img src="poster_11.jpg" alt="美国队长3" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">美国队长3</span>
+            <span class="film-gallery-role">Captain America: Civil War</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2016</span>
+        <img src="poster_12.jpg" alt="星际迷航3" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 1%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">星际迷航3</span>
+            <span class="film-gallery-role">Star Trek Beyond</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2016</span>
+        <img src="poster_13.jpg" alt="深海浩劫" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">深海浩劫</span>
+            <span class="film-gallery-role">Deepwater Horizon</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2016</span>
+        <img src="poster_14.jpg" alt="忍者神龟2" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 1%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">忍者神龟2</span>
+            <span class="film-gallery-role">Teenage Mutant Ninja Turtles 2</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2016</span>
+        <img src="poster_15.jpg" alt="奇异博士" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">奇异博士</span>
+            <span class="film-gallery-role">Doctor Strange</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2017</span>
+        <img src="poster_16.jpg" alt="星际特工" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">星际特工</span>
+            <span class="film-gallery-role">Valerian</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2015</span>
+        <img src="poster_17.jpg" alt="特工卡特" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 10%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">特工卡特</span>
+            <span class="film-gallery-role">Agent Carter</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2015</span>
+        <img src="poster_18.jpg" alt="捉妖记" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 1%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">捉妖记</span>
+            <span class="film-gallery-role">Monster Hunt</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2015</span>
+        <img src="poster_19.jpg" alt="星球大战7" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 10%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">星球大战7</span>
+            <span class="film-gallery-role">Star Wars: The Force Awakens</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2014</span>
+        <img src="poster_20.jpg" alt="变形金刚4" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">变形金刚4</span>
+            <span class="film-gallery-role">Transformers: Age of Extinction</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2015</span>
+        <img src="poster_21.jpg" alt="黑帆2" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">黑帆2</span>
+            <span class="film-gallery-role">Black Sails S2</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2015</span>
+        <img src="poster_22.jpg" alt="狼图腾" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">狼图腾</span>
+            <span class="film-gallery-role">Wolf Totem</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2015</span>
+        <img src="poster_23.jpg" alt="明日世界" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">明日世界</span>
+            <span class="film-gallery-role">Tomorrowland</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2015</span>
+        <img src="poster_24.jpg" alt="魔法老师" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">魔法老师</span>
+            <span class="film-gallery-role">Absolutely Anything</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2013</span>
+        <img src="poster_25.jpg" alt="天注定" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 10%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">天注定</span>
+            <span class="film-gallery-role">A Touch of Sin</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2013</span>
+        <img src="poster_26.jpg" alt="环太平洋" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 10%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">环太平洋</span>
+            <span class="film-gallery-role">Pacific Rim</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2014</span>
+        <img src="poster_27.jpg" alt="地球回音" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">地球回音</span>
+            <span class="film-gallery-role">Earth to Echo</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2013</span>
+        <img src="poster_28.jpg" alt="太极侠" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">太极侠</span>
+            <span class="film-gallery-role">Man of Tai Chi</span>
+        </div>
+    </div>
+    <div class="film-gallery-item" style="width: 176px; height: 99px;">
+        <span class="film-gallery-year">2014</span>
+        <img src="poster_29.jpg" alt="黑帆" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;">
+        <div class="film-gallery-caption">
+            <span class="film-gallery-film">黑帆</span>
+            <span class="film-gallery-role">Black Sails</span>
+        </div>
+    </div>
+</div>
+
+
+
+
                 </div>
             </div>
         </div>
@@ -1355,13 +1377,13 @@
                 <div class="skill-bar"><div class="skill-bar-fill" style="width: 90%"></div></div>
             </div>
             <div class="skill-card" data-delay="2">
-                <div class="skill-icon"><img src="unity_logo.jpeg" alt="Unity" style="width:100%;height:100%;object-fit:contain;padding:4px;" loading="lazy"></div>
+                <div class="skill-icon"><img src="unity_logo.svg" alt="Unity" style="width:100%;height:100%;object-fit:contain;padding:4px;" loading="lazy"></div>
                 <div class="skill-name">Unity</div>
                 <div class="skill-level">灯光 / 渲染 / PV 制作</div>
                 <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%"></div></div>
             </div>
             <div class="skill-card" data-delay="3">
-                <div class="skill-icon"><img src="maya_logo.jpeg" alt="Maya" style="width:100%;height:100%;object-fit:contain;padding:4px;" loading="lazy"></div>
+                <div class="skill-icon"><img src="maya_logo.svg" alt="Maya" style="width:100%;height:100%;object-fit:contain;padding:4px;" loading="lazy"></div>
                 <div class="skill-name">Maya</div>
                 <div class="skill-level">Layout / 场景搭建</div>
                 <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%"></div></div>
@@ -1463,11 +1485,127 @@
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') closeVideoModal();
         });
-        // Auto-duplicate film gallery items for seamless infinite scroll
+        // Film Gallery infinite scroll with inertia drag
         const filmGallery = document.getElementById('filmGallery');
         if (filmGallery) {
-            const items = filmGallery.innerHTML;
-            filmGallery.innerHTML = items + items;
+            // Duplicate items for seamless loop
+            const originalItems = filmGallery.innerHTML;
+            filmGallery.innerHTML = originalItems + originalItems;
+            
+            // Physics state
+            let currentX = 0;
+            let velocity = 0;
+            let isDragging = false;
+            let isHovering = false;
+            let lastMouseX = 0;
+            let lastTime = 0;
+            let animationId;
+            
+            const AUTO_SPEED = 0.5;
+            const FRICTION = 0.95;
+            const RESUME_FACTOR = 0.03;
+            
+            function wrapPosition() {
+                const totalWidth = filmGallery.scrollWidth / 2;
+                while (currentX < -totalWidth) currentX += totalWidth;
+                while (currentX > 0) currentX -= totalWidth;
+            }
+            
+            function update(timestamp) {
+                if (!lastTime) lastTime = timestamp;
+                const delta = timestamp - lastTime;
+                lastTime = timestamp;
+                
+                if (!isDragging) {
+                    if (isHovering) {
+                        // Hovering but not dragging: decay to pause
+                        if (Math.abs(velocity) > 0.05) {
+                            velocity *= FRICTION;
+                        } else {
+                            velocity = 0;
+                        }
+                    } else {
+                        // Not hovering: smoothly return to auto scroll
+                        if (Math.abs(velocity - AUTO_SPEED) > 0.05) {
+                            velocity += (AUTO_SPEED - velocity) * RESUME_FACTOR;
+                        } else {
+                            velocity = AUTO_SPEED;
+                        }
+                    }
+                }
+                
+                currentX -= velocity;
+                wrapPosition();
+                
+                filmGallery.style.transform = `translateX(${currentX}px)`;
+                animationId = requestAnimationFrame(update);
+            }
+            
+            // Only left-click drag
+            filmGallery.addEventListener('mousedown', (e) => {
+                if (e.button !== 0) return;
+                isDragging = true;
+                isHovering = true;
+                velocity = 0;
+                lastMouseX = e.clientX;
+                filmGallery.style.cursor = 'grabbing';
+                e.preventDefault();
+            });
+            
+            document.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                const dx = e.clientX - lastMouseX;
+                velocity = -dx;
+                currentX += velocity;
+                lastMouseX = e.clientX;
+                wrapPosition();
+            });
+            
+            document.addEventListener('mouseup', () => {
+                if (!isDragging) return;
+                isDragging = false;
+                isHovering = true;
+                filmGallery.style.cursor = 'grab';
+            });
+            
+            filmGallery.addEventListener('mouseenter', () => {
+                isHovering = true;
+            });
+            
+            filmGallery.addEventListener('mouseleave', () => {
+                isHovering = false;
+                isDragging = false;
+                filmGallery.style.cursor = 'grab';
+            });
+            
+            // Touch support
+            filmGallery.addEventListener('touchstart', (e) => {
+                isDragging = true;
+                isHovering = true;
+                velocity = 0;
+                lastMouseX = e.touches[0].clientX;
+            }, {passive: true});
+            
+            document.addEventListener('touchmove', (e) => {
+                if (!isDragging) return;
+                const dx = e.touches[0].clientX - lastMouseX;
+                velocity = -dx;
+                currentX += velocity;
+                lastMouseX = e.touches[0].clientX;
+                wrapPosition();
+            }, {passive: true});
+            
+            document.addEventListener('touchend', () => {
+                isDragging = false;
+                isHovering = true;
+            });
+            
+            // Prevent image drag
+            filmGallery.querySelectorAll('img').forEach(img => {
+                img.addEventListener('dragstart', (e) => e.preventDefault());
+            });
+            
+            requestAnimationFrame(update);
         }
         function showToast(msg) {
             const toast = document.createElement('div');
